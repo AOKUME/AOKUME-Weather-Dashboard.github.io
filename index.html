@@ -1,59 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Bujumbura Data</title>
-<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <title>Bujumbura Data</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-<header class="container-fluid">Weather Dashboard</header>
-<br>
-<!-- Retrieved data will be dumped here -->
-<main class="container-fluid">
-    <article class="container-fluid">
-        <div class="row">
-            <section class="col-sm-4">
-                <div class="container">
-                    <div class="input-group">
-                        <input class="form-control" id="listSearch" type="text" placeholder="Search">
-                        <div class="input-group-append"> <span class="input-group-text "><i class="fas fa-search text-grey" aria-hidden="true"></i></span> </div>
+    <header class="container">
+        <img class="header-logo" src="https://openweathermap.org/themes/openweathermap/assets/img/openweather-negative-logo-RGB.png" alt="weather icon">
+    </header>
+    <br>
+    <main class="container">
+        <article class="row weather-dashboard">
+
+            <section class="col-sm-4 left-section">
+
+                <div class="input-group mb-3 search-bar">
+                    <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
-                    <br>
+                </div>
+                <br>
+
+                <div class="container cities">
                     <ul class="list-group" id="myList">
-                        <li class="list-group-item">Austin</li>
-                        <li class="list-group-item">Chicago</li>
-                        <li class="list-group-item">New York</li>
-                        <li class="list-group-item">Orlando</li>
-                        <li class="list-group-item">San Francisco</li>
-                        <li class="list-group-item">Seattle</li>
-                        <li class="list-group-item">Denver</li>
-                        <li class="list-group-item">Atlanta</li>
+                        <li class="list-group-item"><a class="nav-link" href="index.html">Austin</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="index.html">Chicago</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="index.html">New York</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="index.html">Orlando</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="index.html">San Francisco</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="index.html">Seattle</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="index.html">Denver</a></li>
+                        <li class="list-group-item"><a class="nav-link" href="index.html">Atlanta</a></li>
                     </ul>
                 </div>
+
             </section>
-            <section class="col-sm-8">
-                <div class="row">City Stats
-                    <div class="city"></div>
-                    <div class="wind"></div>
-                    <div class="humidity"></div>
-                    <div class="temp"></div>
+
+            <section class="col-sm-8 right-section">
+
+                <div class="row city-current">
+                    <h2 class="city"></h2>
+                    <p class="city-current-tem temp"></p>
+                    <p class="city-current-hum humidity"></p>
+                    <p class="city-current-win wind"></p>
+                    <p class="city-current-des desc"></p>
+                    <div class="ico"> <img class="header-logo" src="https://openweathermap.org/themes/openweathermap/assets/img/img-loading.gif" alt="weather icon">
+                    </div>
                 </div>
-                <div class="row">5-Day Forecast</div>
+
+                <div class="row city-forecast">
+
+                    <div class="col-sm-3 card forecast-1">
+                        <h4 class="date-first">CHICAGO</h4>
+                        <p class="temp">TEMPERATURE</p>
+                        <p class="humidity">HUMIDITY</p>
+                    </div>
+
+                    <div class="col-sm-3 card forecast-2">
+                        <h4 class="date-first">CHICAGO</h4>
+                        <p class="temp">TEMPERATURE</p>
+                        <p class="humidity">HUMIDITY</p>
+                    </div>
+
+                    <div class="col-sm-3 card forecast-3">
+                        <h4 class="date-first">CHICAGO</h4>
+                        <p class="temp">TEMPERATURE</p>
+                        <p class="humidity">HUMIDITY</p>
+                    </div>
+
+                    <div class="col-sm-3 card forecast-4">
+                        <h4 class="date-first">CHICAGO</h4>
+                        <p class="temp">TEMPERATURE</p>
+                        <p class="humidity">HUMIDITY</p>
+                    </div>
+
+                </div>
+
             </section>
-        </div>
-    </article>
-</main>
-<footer class="container-fluid">Content for New footer Tag Goes Here</footer>
- 
-<script src="jQueryAssets/SpryDOMUtils.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
-<script type="text/javascript" src="assets/index.js"></script>
+
+        </article>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="assets/index.js"></script>
+
+    <!-- <script type="text/javascript">
+        // This is our API key. Add your own API key between the ""
+        var APIKey = "7b7da8f7f0400b14633ffa73f109e78d";
+
+        // Here we are building the URL we need to query the database
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Bujumbura,Burundi&appid=" + APIKey + '&units=imperial';
+
+        // We then created an AJAX call
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function(response) {
+            console.log(response);
+            $('.city').html(`<h1>${response.name}</h1>`);
+            $('.wind').html(response.wind.speed);
+            $('.humidity').html(response.main.humidity);
+            $('.temp').html(response.main.temp);
+            $('.temp').html(response.main.temp);
+        });
+    </script> -->
+
 </body>
+
 </html>

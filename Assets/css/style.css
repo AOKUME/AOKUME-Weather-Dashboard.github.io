@@ -2,13 +2,66 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 15px;
     text-align: center;
+    background-color: #092838;
 }
 
 header {
-    background: #6D6D6D;
     padding: 20px;
+    border-radius: 5px;
 }
 
-.jumbotron {
+img {
+    max-width: 20%;
+    height: auto;
+}
+
+h1 {
+    font-size: 30Px;
+    color: white;
+    height: 10px;
+    padding: 0;
+}
+
+.left-section {
+    padding: 0px 20px;
+}
+
+.list-group-item {
+    background-color: #0079BF;
+}
+
+a {
+    color: white;
+}
+
+.cities {
+    background-color: #094C72;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.right-section {
+    background-color: #094C72;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.city-current {
+    color: white;
+    background-color: #0079BF;
+    padding: 20px;
+    border-radius: 5px;
+    height: 415px;
     text-align: center;
+}
+
+.city-forecast {
+    padding-top: 10px;
+}
+
+.card {
+    color: white;
+    background-color: #055A8C;
+    border-radius: 5px;
+    padding: 20px;
 }
