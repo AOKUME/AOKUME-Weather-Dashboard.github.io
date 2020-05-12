@@ -17,7 +17,5 @@ console.log(response) //
     $('.temp').html("temp: " + response.main.temp);
     $('.temp').html("temp: " + response.main.temp);
     $('.desc').html(response.weather[0].description);
-    // $('.ico').html(response.weather[0].icon)
-
     $('.ico').html(`<br><img src="http://openweathermap.org/img/wn/${response.weather[0].icon}" alt="weather icon">`)
 });

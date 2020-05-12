@@ -22,6 +22,12 @@ h1 {
     padding: 0;
 }
 
+/* .weather-dashboard {
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 20px;
+} */
+
 .left-section {
     padding: 0px 20px;
 }
@@ -32,17 +38,19 @@ h1 {
 
 a {
     color: white;
+    height: 41px;
 }
 
 .cities {
-    background-color: #094C72;
-    padding: 10px;
+    background-color: #ffff;
+    padding: 5px;
     border-radius: 5px;
+    height: 540px;
 }
 
 .right-section {
-    background-color: #094C72;
-    padding: 10px 25px;
+    background-color: #ffff;
+    padding: 5px 20px;
     border-radius: 5px;
 }
 
@@ -54,17 +62,17 @@ a {
     background-color: #0079BF;
     padding: 20px;
     border-radius: 5px;
-    height: 415px;
+    height: 396px;
     text-align: center;
 }
 
 .city-forecast {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .card {
     color: white;
-    background-color: #055A8C;
+    background-color: #0079BF;
     border-radius: 5px;
     padding: 20px;
 }
