@@ -1,78 +1,73 @@
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 15px;
-    text-align: center;
     background-color: #092838;
 }
 
+/*------------Header CSS------------*/
 header {
-    padding: 20px;
-    border-radius: 5px;
+    padding: 20px 0px;
+    /* background-color: #0079BF; */
 }
 
-img {
-    max-width: 20%;
+.header-logo {
+    max-width: 30%;
     height: auto;
 }
 
-h1 {
-    font-size: 30Px;
-    color: white;
-    height: 10px;
-    padding: 0;
+.search-bar {
+    padding-top: 50px;
 }
 
-/* .weather-dashboard {
+/*------------Main CSS------------*/
+.weather-dashboard {
     background-color: #ffff;
+    padding: 6px;
     border-radius: 5px;
-    padding: 20px;
-} */
-
-.left-section {
-    padding: 0px 20px;
+    text-align: center;
 }
 
-.list-group-item {
-    background-color: #0079BF;
-}
-
-a {
-    color: white;
-    height: 41px;
+/*------------Main Left CSS------------*/
+.main-left {
+    background-color: #092838;
+    border-right: 3px solid white;
+    border-radius: 5px;
 }
 
 .cities {
-    background-color: #ffff;
-    padding: 5px;
-    border-radius: 5px;
-    height: 540px;
+    /* padding-right: 5px; */
 }
 
-.right-section {
-    background-color: #ffff;
-    padding: 5px 20px;
-    border-radius: 5px;
+/*------------Main Rright CSS------------*/
+
+.main-right {
+    border-left: 3px solid white;
+}
+
+.chicago {
+    background-image: url("https://www.silversmithchicagohotel.com/resourcefiles/home-image-slider/the-silver-smith-hotel-chicago-home-3.jpg");
 }
 
 .city-current {
     color: white;
-    background-image: url("https://www.silversmithchicagohotel.com/resourcefiles/home-image-slider/the-silver-smith-hotel-chicago-home-3.jpg");
     background-position: center;
     background-size: cover;
     background-color: #0079BF;
+    place-items: center;
     padding: 20px;
     border-radius: 5px;
-    height: 396px;
-    text-align: center;
+    height: 500px;
 }
 
 .city-forecast {
     padding-top: 5px;
 }
 
-.card {
+.content {
     color: white;
-    background-color: #0079BF;
+    background-color: #092838;
+    height: 150px;
+    font-size: 12px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     border-radius: 5px;
-    padding: 20px;
 }

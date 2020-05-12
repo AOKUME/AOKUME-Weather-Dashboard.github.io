@@ -15,126 +15,107 @@
 </head>
 
 <body>
+
     <header class="container">
-        <img class="header-logo" src="https://openweathermap.org/themes/openweathermap/assets/img/openweather-negative-logo-RGB.png" alt="weather icon">
-    </header>
-    <br>
-    <main class="container">
-        <article class="row weather-dashboard">
+        <section class="row">
 
-            <section class="col-sm-3 left-section">
+            <section class="col-sm-8">
+                <img class="header-logo" src="https://openweathermap.org/themes/openweathermap/assets/img/openweather-negative-logo-RGB.png" alt="weather icon">
+            </section>
 
-                <div class="input-group mb-3 search-bar">
+            <section class="col-sm-4 search">
+                <div class="input-group search-bar">
                     <input type="search" class="form-control" placeholder="Search" aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
                 </div>
-
-                <div class="container cities">
-
-                    <ul class="list-group" id="myList">
-                        <li class="list-group-item"><a class="nav-link" href="index.html">Austin</a></li>
-                        <li class="list-group-item"><a class="nav-link" href="index.html">Chicago</a></li>
-                        <li class="list-group-item"><a class="nav-link" href="index.html">New York</a></li>
-                        <li class="list-group-item"><a class="nav-link" href="index.html">Orlando</a></li>
-                        <li class="list-group-item"><a class="nav-link" href="index.html">San Francisco</a></li>
-                        <li class="list-group-item"><a class="nav-link" href="index.html">Seattle</a></li>
-                        <li class="list-group-item"><a class="nav-link" href="index.html">Denver</a></li>
-                        <li class="list-group-item"><a class="nav-link" href="index.html">Atlanta</a></li>
-                    </ul>
-                </div>
-
             </section>
 
-            <section class="col-sm-9 right-section">
+        </section>
+    </header>
 
-                <div class="row city-current">
-                    <h2 class="city"></h2>
-                    <p class="city-current-tem temp"></p>
-                    <p class="city-current-hum humidity"></p>
-                    <p class="city-current-win wind"></p>
-                    <p class="city-current-des desc"></p>
+    <main class="container">
+        <article class="row no-gutters weather-dashboard">
+
+            <div class="col-2 main-left">
+                <ul class="nav navbar-nav cities">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Arizona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Chicago</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                </ul>
+            </div>
+
+            <section class="col-10 main-right">
+                <div class="row no-gutters chicago city-current">
+                    <h2 class="current-cit city"></h2>
+                    <p class="current-tem temp"></p>
+                    <p class="current-hum humidity"></p>
+                    <p class="current-win wind"></p>
+                    <p class="current-des desc"></p>
                     <div class="ico"> <img class="header-logo" src="https://openweathermap.org/themes/openweathermap/assets/img/img-loading.gif" alt="weather icon">
                     </div>
                 </div>
 
-                <div class="row city-forecast">
-
-                    <div class="col-sm-2 card forecast-1">
-                        <h4 class="date-first">CHICAGO</h4>
+                <div class="row no-gutters city-forecast">
+                    <div class="col-sm-2 content forecast">
+                        <h4 class="date-first">05-12-20</h4>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
-                    <div class="col-sm-2 card forecast-2">
-                        <h4 class="date-first">CHICAGO</h4>
+                    <div class="col-sm-2 content forecast">
+                        <h4 class="date-first">05-12-20</h4>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
-                    <div class="col-sm-2 card forecast-3">
-                        <h4 class="date-first">CHICAGO</h4>
+                    <div class="col-sm-2 content forecast">
+                        <h4 class="date-first">05-12-20</h4>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
-                    <div class="col-sm-2 card forecast-4">
-                        <h4 class="date-first">CHICAGO</h4>
+                    <div class="col-sm-2 content forecast">
+                        <h4 class="date-first">05-12-20</h4>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
-                    <div class="col-sm-2 card forecast-4">
-                        <h4 class="date-first">CHICAGO</h4>
+                    <div class="col-sm-2 content forecast">
+                        <h4 class="date-first">05-12-20</h4>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
-                    <div class="col-sm-2 card forecast-4">
-                        <h4 class="date-first">CHICAGO</h4>
+                    <div class="col-sm-2 content forecast">
+                        <h4 class="date-first">05-12-20</h4>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
-
                 </div>
-
             </section>
 
         </article>
-
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
     <script type="text/javascript" src="assets/index.js"></script>
-
-    <!-- <script type="text/javascript">
-        // This is our API key. Add your own API key between the ""
-        var APIKey = "7b7da8f7f0400b14633ffa73f109e78d";
-
-        // Here we are building the URL we need to query the database
-        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Bujumbura,Burundi&appid=" + APIKey + '&units=imperial';
-
-        // We then created an AJAX call
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function(response) {
-            console.log(response);
-            $('.city').html(`<h1>${response.name}</h1>`);
-            $('.wind').html(response.wind.speed);
-            $('.humidity').html(response.main.humidity);
-            $('.temp').html(response.main.temp);
-            $('.temp').html(response.main.temp);
-        });
-    </script> -->
 
 </body>
 
