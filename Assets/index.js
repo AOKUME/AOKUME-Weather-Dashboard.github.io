@@ -19,3 +19,15 @@ console.log(response) //
     $('.desc').html(response.weather[0].description);
     $('.ico').html(`<br><img src="http://openweathermap.org/img/wn/${response.weather[0].icon}" alt="weather icon">`)
 });
+
+
+$(document).ready(function(){
+
+    var dateAndYear = moment().format('MMMM Do, YYYY');
+    $('#currentDay').html(dateAndYear);
+    console.log(dateAndYear);
+
+    var timeHMS = moment().format('h:mm:ss a');
+    $('#currentHour').html(timeHMS);
+    console.log(timeHMS);
+});

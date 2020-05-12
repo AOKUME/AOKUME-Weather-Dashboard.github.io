@@ -43,6 +43,10 @@ header {
     border-left: 3px solid white;
 }
 
+.current-cit {
+    /* padding-bottom: 500px; */
+}
+
 .chicago {
     background-image: url("https://www.silversmithchicagohotel.com/resourcefiles/home-image-slider/the-silver-smith-hotel-chicago-home-3.jpg");
 }
