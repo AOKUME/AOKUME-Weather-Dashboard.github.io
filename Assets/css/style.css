@@ -48,6 +48,9 @@ a {
 
 .city-current {
     color: white;
+    background-image: url("https://www.silversmithchicagohotel.com/resourcefiles/home-image-slider/the-silver-smith-hotel-chicago-home-3.jpg");
+    background-position: center;
+    background-size: cover;
     background-color: #0079BF;
     padding: 20px;
     border-radius: 5px;
