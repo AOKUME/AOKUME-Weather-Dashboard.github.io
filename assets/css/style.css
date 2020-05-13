@@ -37,8 +37,6 @@ header {
     border-radius: 5px;
 }
 
-.cities {}
-
 a {
     color: white;
 }
@@ -56,12 +54,12 @@ a {
 
 /*------------Right Side Top Section Middle CSS------------*/
 .current-center {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .current-temp {
     padding-top: 140px;
-    font-size: 150px;
+    font-size: calc(400vw / 40);
     text-shadow: 4px 4px #092838;
 }
 
@@ -100,16 +98,19 @@ h4 {
 }
 
 .city-forecast {
-    padding-top: 5px;
+    /* padding-top: 10px; */
+    /* border-radius: 5px; */
+    /* background-color: #092838; */
+
 }
 
 .content {
     color: white;
-    background-color: #092838;
     height: 180px;
-    font-size: 12px;
-    border-radius: 5px;
+    font-size: calc(10vw / 10);
     padding: 20px;
+    border-radius: 5px;
+    background-color: #092838;
 }
 
 /*------------Right Side Top Section Background City Pics------------*/

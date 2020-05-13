@@ -4,13 +4,16 @@ var APIKey = "7b7da8f7f0400b14633ffa73f109e78d";
 // Here we are building the URL we need to query the database
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Chicago,Illinois&appid=" + APIKey + '&units=imperial';
 
+// var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=Chicago,Illinois&appid=" + APIKey + '&units=imperial';
+
+
 // We then created an AJAX call //
 $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function(response) {
+    console.log(response)
 
-    console.log(response) //
     var icon = response.weather[0].icon;
     $(".city").html(response.name);
     $('.wind').html("Wind: " + response.wind.speed);
