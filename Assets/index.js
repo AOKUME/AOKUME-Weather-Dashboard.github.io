@@ -10,20 +10,18 @@ $.ajax({
     method: "GET"
 }).then(function(response) {
 
-console.log(response) //
+    console.log(response) //
+    var icon = response.weather[0].icon
     $(".city").html(response.name);
     $('.wind').html("Wind: " + response.wind.speed);
     $('.humidity').html("Humidity: " + response.main.humidity);
     $('.temp').html("temp: " + response.main.temp);
     $('.temp').html("temp: " + response.main.temp);
     $('.desc').html(response.weather[0].description);
-    $('.ico').html(`<br><img src="http://openweathermap.org/img/wn/${response.weather[0].icon}" alt="weather icon">`)
+    $('.ico').html(`<br><img src='http://openweathermap.org/img/wn/${icon}.png' class="img-fluid" alt="weather icon">`);
 });
 
-$('.display-4').append(` <img src='http://openweathermap.org/img/wn/${icon}.png' class="img-fluid" alt="Responsive image">`);
-var icon = response.weather[0].icon
-
-$(document).ready(function(){
+$(document).ready(function() {
 
     var dateAndYear = moment().format('MMMM Do, YYYY');
     $('#currentDay').html(dateAndYear);
