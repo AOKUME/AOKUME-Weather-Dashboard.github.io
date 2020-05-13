@@ -4,6 +4,7 @@ body {
 }
 
 /*------------Header CSS------------*/
+
 header {
     padding: 20px 0px;
     /* background-color: #0079BF; */
@@ -19,6 +20,7 @@ header {
 }
 
 /*------------Main CSS------------*/
+
 .weather-dashboard {
     background-color: #ffff;
     padding: 6px;
@@ -27,6 +29,7 @@ header {
 }
 
 /*------------Main Left CSS------------*/
+
 .main-left {
     background-color: #092838;
     border-right: 3px solid white;
@@ -44,7 +47,13 @@ header {
 }
 
 .current-cit {
-    /* padding-bottom: 500px; */
+    padding-bottom: 500px;
+    text-align: left;
+}
+
+.time {
+    padding-bottom: 500px;
+    text-align: right;
 }
 
 .chicago {
@@ -71,7 +80,7 @@ header {
     background-color: #092838;
     height: 150px;
     font-size: 12px;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
     border-radius: 5px;
 }

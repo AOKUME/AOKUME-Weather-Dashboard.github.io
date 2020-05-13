@@ -20,6 +20,8 @@ console.log(response) //
     $('.ico').html(`<br><img src="http://openweathermap.org/img/wn/${response.weather[0].icon}" alt="weather icon">`)
 });
 
+$('.display-4').append(` <img src='http://openweathermap.org/img/wn/${icon}.png' class="img-fluid" alt="Responsive image">`);
+var icon = response.weather[0].icon
 
 $(document).ready(function(){
 
