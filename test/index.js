@@ -11,14 +11,14 @@ $.ajax({
 }).then(function(response) {
 
     console.log(response) //
-    var icon = response.weather[0].icon
+    var icon = response.weather[0].icon;
     $(".city").html(response.name);
     $('.wind').html("Wind: " + response.wind.speed);
     $('.humidity').html("Humidity: " + response.main.humidity);
     $('.temp').html("temp: " + response.main.temp);
     $('.temp').html("temp: " + response.main.temp);
     $('.desc').html(response.weather[0].description);
-    $('.ico').html(`<br><img src='http://openweathermap.org/img/wn/${icon}.png' class="img-fluid" alt="weather icon">`);
+    $('.ico').html(`<br><img src='http://openweathermap.org/img/wn/${icon}.png' class="img-fluid icon" alt="weather icon">`);
 });
 
 $(document).ready(function() {
