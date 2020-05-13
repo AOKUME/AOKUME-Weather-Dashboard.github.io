@@ -2,7 +2,7 @@
 var APIKey = "7b7da8f7f0400b14633ffa73f109e78d";
 
 // Here we are building the URL we need to query the database
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Bujumbura,Burundi&appid=" + APIKey + '&units=imperial';
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=Chicago,Illinois&appid=" + APIKey + '&units=imperial';
 
 // We then created an AJAX call //
 $.ajax({
@@ -15,10 +15,10 @@ $.ajax({
     $(".city").html(response.name);
     $('.wind').html("Wind: " + response.wind.speed);
     $('.humidity').html("Humidity: " + response.main.humidity);
-    $('.temp').html("temp: " + response.main.temp);
-    $('.temp').html("temp: " + response.main.temp);
+    $('.combo').html("Humidity: " + response.main.humidity + " - " + " Wind: " + response.wind.speed);
+    $('.temp').html(response.main.temp + "°F");
     $('.desc').html(response.weather[0].description);
-    $('.ico').html(`<br><img src='http://openweathermap.org/img/wn/${icon}.png' class="img-fluid icon" alt="weather icon">`);
+    $('.ico').html(`<img src='http://openweathermap.org/img/wn/${icon}.png' class="img-fluid weather-icon" alt="weather icon">`);
 });
 
 $(document).ready(function() {
@@ -27,7 +27,7 @@ $(document).ready(function() {
     $('#currentDay').html(dateAndYear);
     console.log(dateAndYear);
 
-    var timeHMS = moment().format('h:mm:ss a');
+    var timeHMS = moment().format('h:mm a');
     $('#currentHour').html(timeHMS);
     console.log(timeHMS);
 });

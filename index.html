@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo_16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo_32x32.png">
+    <link rel="icon" type="image/png" sizes="60x60" href="assets/logo_60x60.png">
+
     <title>Weather Dashboard</title>
 </head>
 
@@ -35,45 +40,41 @@
     <main class="container">
         <article class="row no-gutters weather-dashboard">
 
-            <div class="col-2 main-left">
+            <div class="col-1 main-left">
                 <ul class="nav navbar-nav cities">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Arizona</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Chicago</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">City Name</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="index.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">City</a></li>
                 </ul>
             </div>
 
-            <section class="col-10 main-right">
-                <div class="row no-gutters chicago city-current">
-                    <div class="col-3">
-                        <h2 class="current-cit city"></h2>
+            <section class="col-11 main-right">
+                <div class="row no-gutters chicago current-city">
+                    <div class="col-3 current-left">
+                        <h2 class="current-name city"></h2>
                     </div>
-                    <div class="col-6 info-center">
-                        <div class="row">
-                            <div class="ico"> <img class="icon-gif" src="https://openweathermap.org/themes/openweathermap/assets/img/img-loading.gif" alt="weather icon">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <p class="current-tem temp"></p>
-                            <p class="current-hum humidity"></p>
-                            <p class="current-win wind"></p>
-                        </div>
-                        <p class="current-des desc"></p>
+
+                    <div class="col-6 current-center">
+                        <h1 class="current-temp temp"></h1>
+                        <div class="current-combo combo"></div>
+                        <div class="current-des desc"></div>
                     </div>
-                    <div class="col-3 time">
+
+                    <div class="col-3 time current-right">
                         <a><span id="currentDay"></span></a><br>
                         <a><span id="currentHour"></span></a>
                     </div>
@@ -82,36 +83,42 @@
                 <div class="row no-gutters city-forecast">
                     <div class="col-sm-2 content forecast">
                         <h4 class="date-first">05-12-20</h4>
+                        <div class="ico"></div>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
                     <div class="col-sm-2 content forecast">
                         <h4 class="date-first">05-12-20</h4>
+                        <div class="ico"></div>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
                     <div class="col-sm-2 content forecast">
                         <h4 class="date-first">05-12-20</h4>
+                        <div class="ico"></div>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
                     <div class="col-sm-2 content forecast">
                         <h4 class="date-first">05-12-20</h4>
+                        <div class="ico"></div>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
                     <div class="col-sm-2 content forecast">
                         <h4 class="date-first">05-12-20</h4>
+                        <div class="ico"></div>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>
 
                     <div class="col-sm-2 content forecast">
                         <h4 class="date-first">05-12-20</h4>
+                        <div class="ico"></div>
                         <p class="temp">TEMPERATURE</p>
                         <p class="humidity">HUMIDITY</p>
                     </div>

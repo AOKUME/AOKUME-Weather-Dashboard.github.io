@@ -6,7 +6,6 @@ body {
 /*------------Header CSS------------*/
 header {
     padding: 20px 0px;
-    /* background-color: #0079BF; */
 }
 
 .header-logo {
@@ -26,50 +25,78 @@ header {
     text-align: center;
 }
 
-/*------------Main Left CSS------------*/
+.icon {
+    background-color: #ffff;
+    border-radius: 5px;
+}
+
+/*------------Main Left Nav CSS------------*/
 .main-left {
     background-color: #092838;
     border-right: 3px solid white;
     border-radius: 5px;
 }
 
-.cities {
-    /* padding-right: 5px; */
+.cities {}
+
+a {
+    color: white;
 }
 
-/*------------Main Rright CSS------------*/
+/*------------Main Right Article CSS------------*/
 .main-right {
     border-left: 3px solid white;
 }
 
-.current-cit {
-    padding-bottom: 500px;
+/*------------Right Side Top Section Left CSS------------*/
+.current-name {
     text-align: left;
+    border-radius: 5px;
 }
 
+/*------------Right Side Top Section Middle CSS------------*/
+.current-center {
+    text-align: center;
+}
+
+.current-temp {
+    padding-top: 140px;
+    font-size: 150px;
+    text-shadow: 4px 4px #092838;
+}
+
+.current-combo {
+    font-size: 20px;
+}
+
+.current-des {
+    font-size: 20px;
+}
+
+.op-block {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.current-city {
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-color: #0079BF;
+    padding: 20px;
+    border-radius: 5px;
+    height: 500px;
+}
+
+/*------------Right Side Top Section Right CSS------------*/
 .time {
     padding-bottom: 500px;
     text-align: right;
 }
 
-.img-fluid {
-    width: 100%;
-    height: auto;
-}
-
-.chicago {
-    background-image: url("https://www.silversmithchicagohotel.com/resourcefiles/home-image-slider/the-silver-smith-hotel-chicago-home-3.jpg");
-}
-
-.city-current {
-    color: white;
-    background-position: center;
-    background-size: cover;
-    background-color: #0079BF;
-    place-items: center;
-    padding: 20px;
-    border-radius: 5px;
-    height: 500px;
+/*------------Right Side Bottom Section CSS------------*/
+h4 {
+    font-size: 20px;
 }
 
 .city-forecast {
@@ -79,9 +106,15 @@ header {
 .content {
     color: white;
     background-color: #092838;
-    height: 150px;
+    height: 180px;
     font-size: 12px;
-    border-left: 3px solid white;
-    border-right: 3px solid white;
+    /* border-left: 3px solid white;
+    border-right: 3px solid white; */
     border-radius: 5px;
+    padding: 20px;
+}
+
+/*------------Right Side Top Section Background City Pics------------*/
+.chicago {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(9,40,56,0) 60%), url("https://www.silversmithchicagohotel.com/resourcefiles/home-image-slider/the-silver-smith-hotel-chicago-home-3.jpg");
 }
