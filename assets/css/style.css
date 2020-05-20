@@ -10,7 +10,6 @@ header {
 
 .header-logo {
     max-width: 30%;
-    height: auto;
 }
 
 .search-bar {
@@ -26,41 +25,19 @@ header {
 }
 
 .icon {
-    background-color: #ffff;
+    /* background-color: #0079BF; */
     border-radius: 5px;
 }
 
-/*------------Main Left Nav CSS------------*/
-.main-left {
-    background-color: #ff7953;
-    border-right: 3px solid white;
-    border-radius: 5px;
-}
-
-a {
-    color: white;
-}
-
-/*------------Main Right Article CSS------------*/
-.main-right {
-    border-left: 3px solid white;
-}
-
-/*------------Right Side Top Section Left CSS------------*/
-.current-name {
+.city {
     text-align: left;
     border-radius: 5px;
 }
 
-/*------------Right Side Top Section Middle CSS------------*/
-.current-center {
-    /* text-align: center; */
-}
-
 .current-temp {
     padding-top: 140px;
-    font-size: calc(400vw / 40);
-    text-shadow: 4px 4px #092838;
+    font-size: 100px;
+    text-shadow: 2px 2px #092838;
 }
 
 .current-combo {
@@ -71,10 +48,6 @@ a {
     font-size: 20px;
 }
 
-.op-block {
-    background-color: black;
-    opacity: 0.5;
-}
 
 .current-city {
     color: white;
@@ -86,28 +59,19 @@ a {
     height: 500px;
 }
 
-/*------------Right Side Top Section Right CSS------------*/
+/*------------Top Section Right CSS------------*/
 .time {
     padding-bottom: 500px;
     text-align: right;
 }
 
-/*------------Right Side Bottom Section CSS------------*/
+/*------------Bottom Section CSS------------*/
 h4 {
     font-size: 20px;
 }
 
-.city-forecast {
-    /* padding-top: 10px; */
-    /* border-radius: 5px; */
-    /* background-color: #092838; */
-
-}
-
-.content {
+.forecast {
     color: white;
-    height: 180px;
-    font-size: calc(10vw / 10);
     padding: 20px;
     border-radius: 5px;
     background-color: #092838;
